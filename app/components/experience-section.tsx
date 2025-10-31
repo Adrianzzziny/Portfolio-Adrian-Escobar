@@ -1,8 +1,9 @@
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
-import { Building2, Briefcase, GraduationCap } from "lucide-react"
+import { Building2, Building, University } from "lucide-react"
 
 const experiences = [
   {
+
     company: "Cloud Computing Peru",
     position: "Frontend Developer",
     period: "Agosto 2025 - Actualidad",
@@ -16,10 +17,11 @@ const experiences = [
     stack: ["React JS", "Next JS", "Angular", "TypeScript", "Tailwind CSS", "Figma", "Gitlab", "V0", "Supabase"],
   },
   {
+    Key: "Frontend Developer",
     company: "Cibertec Peru SAC",
     position: "Frontend Developer Junior",
     period: "Julio 2024 – Julio 2025",
-    icon: GraduationCap,
+    icon: University,
     description: [
       "Implementación de aplicaciones web para automatizar procesos académicos y administrativos.",
       "Desarrollo de interfaces modernas y responsive mejorando la experiencia y accesibilidad para los usuarios.",
@@ -28,10 +30,11 @@ const experiences = [
     stack: ["React JS", "TypeScript", "Tailwind CSS", "Firebase", "Design Thinking", "Miro", "Trello", "Notion"],
   },
   {
+    Key: "Frontend Developer",
     company: "Kruma SAC",
     position: "Frontend Developer Junior",
     period: "Febrero 2024 - Julio 2024",
-    icon: Briefcase,
+    icon: Building,
     description: [
       "Refactorización de componentes con React y TypeScript para mejorar mantenibilidad y optimización del performance.",
       "Integración con APIs REST y mejora en consistencia visual bajo lineamientos de diseño.",

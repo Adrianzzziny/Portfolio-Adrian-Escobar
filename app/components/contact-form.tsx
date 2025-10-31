@@ -39,12 +39,12 @@ export default function ContactForm() {
           <Input id="email" name="email" type="email" required />
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium mb-2">
+          <label htmlFor="message" className="block text-sm font-medium mb-8">
             Message
           </label>
           <Textarea id="message" name="message" required />
         </div>
-        <Button type="submit" className="w-full" disabled={pending}>
+        <Button type="submit" className="w-full mt-10" disabled={pending}>
           {pending ? "Sending..." : "Send Message"}
         </Button>
         {message && <p className="text-sm text-center mt-4 text-muted-foreground">{message}</p>}

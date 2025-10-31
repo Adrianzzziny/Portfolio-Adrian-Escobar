@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button"
-import { Github, Linkedin, Mail } from "lucide-react"
+import { Github, Linkedin, Mail, MessageCircleMore } from "lucide-react"
 import Link from "next/link"
 import ProjectCard from "./components/project-card"
 import ExperienceSection from "./components/experience-section"
 import EducationSection from "./components/education-section"
+import TechStack from "./components/tech-stack"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 export default function Page() {
   return (
@@ -24,6 +26,9 @@ export default function Page() {
               <Link href="#projects" className="transition-colors hover:text-foreground/80">
                 Proyectos
               </Link>
+              <Link href="#tech-stack" className="transition-colors hover:text-foreground/80">
+                Tech Stack
+              </Link>
               <Link href="#education" className="transition-colors hover:text-foreground/80">
                 Educación
               </Link>
@@ -32,12 +37,20 @@ export default function Page() {
               </Link>
             </nav>
           </div>
+          <div className="ml-auto flex items-center gap-2">
           <Button
             variant="outline"
             className="ml-auto bg-white text-black border-black hover:bg-black hover:text-white dark:bg-white dark:text-black dark:border-white dark:hover:bg-black dark:hover:text-white transition-colors"
           >
+            <a
+            href="/CV_AdrianEscobar_2025_SP.pdf"
+            download="Adrian_Escobar_CV.pdf"
+          >
             Descargar CV
+          </a>
           </Button>
+          <ThemeToggle />
+          </div>
         </div>
       </header>
 
@@ -64,7 +77,7 @@ export default function Page() {
                     <span className="sr-only">LinkedIn</span>
                   </Button>
                 </Link>
-                <Link href="https://github.com" target="_blank">
+                <Link href="https://github.com/Adrianzzziny" target="_blank">
                   <Button variant="outline" size="icon">
                     <Github className="h-4 w-4" />
                     <span className="sr-only">GitHub</span>
@@ -97,27 +110,27 @@ export default function Page() {
               <ProjectCard
                 title="Mesa de Partes Virtual - INDECOPI"
                 description="Sistema de gestión de trámites con formularios multipaso, persistencia de datos y diseño adaptable. Interfaz moderna implementada con Angular siguiendo diseños de Figma."
-                image="/government-digital-platform-indecopi.jpg"
-                githubLink="https://github.com"
-                liveLink="https://example.com"
+                image="/indecopi.png"
+                githubLink="https://github.com/Adrianzzziny/MVP-Indecopi-Angular"
+                liveLink="https://mvp-indecopi-angular-oair.vercel.app/home"
                 tags={["Angular", "TypeScript", "Figma"]}
                 company="Cloud Computing Peru"
               />
               <ProjectCard
                 title="Sistema de Autenticación - SUNASS"
                 description="Módulo completo de gestión de usuarios con login, bandeja de usuarios, creación, reportes y edición con validaciones dinámicas para entidad pública."
-                image="/authentication-system-dashboard.jpg"
-                githubLink="https://github.com"
-                liveLink="https://example.com"
+                image="/Sunass.png"
+                githubLink="https://github.com/Adrianzzziny/Dashboard-Sunass-IEVAP-Angular"
+                liveLink="https://github.com/Adrianzzziny/Dashboard-Sunass-IEVAP-Angular"
                 tags={["Angular", "TypeScript", "Supabase"]}
                 company="Cloud Computing Peru"
               />
               <ProjectCard
                 title="Sistema de Pedidos para Restaurantes"
                 description="Plataforma web de autoservicio y punto de venta con menús dinámicos, carrito de compras y flujo optimizado. Integración de IA para prototipos rápidos."
-                image="/restaurant-ordering-system-pos.jpg"
-                githubLink="https://github.com"
-                liveLink="https://example.com"
+                image="/screenEstacionRoll.png"
+                githubLink="https://github.com/Adrianzzziny/Estacion-Roll-FoodOrderApp"
+                liveLink="https://estacion-roll-food-order-app.vercel.app/"
                 tags={["React", "Next.js", "Tailwind CSS", "V0"]}
                 company="Cloud Computing Peru"
               />
@@ -125,35 +138,35 @@ export default function Page() {
               <ProjectCard
                 title="Sistema de Gestión Académica"
                 description="Aplicación web para automatizar procesos académicos, reduciendo tiempos en un 70%. Interfaz moderna y responsive con enfoque en accesibilidad."
-                image="/academic-management-system-university.jpg"
+                image="/screenAcademica.png"
                 githubLink="https://github.com"
                 liveLink="https://example.com"
-                tags={["React", "TypeScript", "Firebase"]}
+                tags={["Vue JS", "TypeScript", "CSS" ,"Firebase"]}
                 company="Cibertec Peru SAC"
               />
               <ProjectCard
-                title="Portal Administrativo Digital"
-                description="Sistema de digitalización de flujos administrativos con reducción significativa de tiempos. Diseño centrado en el usuario con Design Thinking."
-                image="/administrative-portal-dashboard.jpg"
-                githubLink="https://github.com"
-                liveLink="https://example.com"
-                tags={["React", "TypeScript", "Tailwind CSS"]}
-                company="Cibertec Peru SAC"
-              />
-              <ProjectCard
-                title="Plataforma de Gestión Estudiantil"
-                description="Herramienta integral para gestión de estudiantes con interfaces intuitivas y procesos automatizados. Mejora en experiencia de usuario y eficiencia operativa."
-                image="/student-management-platform.jpg"
-                githubLink="https://github.com"
-                liveLink="https://example.com"
+                title="Sistema de Reservas de Laboratorios"
+                description="Plataforma web que permite a estudiantes reservar espacios en laboratorios de cómputo con validaciones en tiempo real, control de cupos y panel administrativo."
+                image="/screenReservaAulas.png"
+                githubLink="https://github.com/Adrianzzziny/Sistema-de-Reservas-de-Laboratorios"
+                liveLink="https://sistema-de-reservas-de-laboratorios.vercel.app/"
                 tags={["React", "Firebase", "Tailwind CSS"]}
+                company="Cibertec Peru SAC"
+              />
+              <ProjectCard
+                title="Sistema de Horarios"
+                description="Sistema que genera automáticamente horarios semanales de salones a partir de archivos Excel, simplificando la creación de horarios impresos para aulas."
+                image="/screenSistemaHorarios.png"
+                githubLink="https://github.com/Adrianzzziny/Sistema-de-Horarios-"
+                liveLink="https://github.com/Adrianzzziny/Sistema-de-Horarios-"
+                tags={["HTML", "CSS", "Javascript", "Excel Integration"]}
                 company="Cibertec Peru SAC"
               />
 
               <ProjectCard
-                title="Refactorización de Plataforma Web"
-                description="Optimización y refactorización de componentes React con TypeScript. Mejora en mantenibilidad, performance e integración con APIs REST."
-                image="/modern-web-platform-refactoring.jpg"
+                title="Refactorización de Componentes Web"
+                description="Optimización y refactorización de componentes React con TypeScript. Mejora en mantenibilidad, performance e integración con APIs REST para la firma de abogados Rubio Leguia."
+                image="/screenKruma2.png"
                 githubLink="https://github.com"
                 liveLink="https://example.com"
                 tags={["React", "TypeScript", "API REST", "Figma"]}
@@ -161,17 +174,27 @@ export default function Page() {
               />
 
               <ProjectCard
-                title="Portfolio Personal Interactivo"
-                description="Sitio web personal desarrollado con Next.js y TypeScript. Diseño moderno con animaciones, modo oscuro y formulario de contacto funcional."
-                image="/modern-developer-portfolio-website.jpg"
-                githubLink="https://github.com"
+                title="Proyecto Académico - Uva Morada"
+                description="Aplicacion móvil desarrollada con React Native y TypeScript. Diseño moderno con animaciones, formularios para Inicio Sesion, Registro, Elección de objetivo nutricional"
+                image="/screenUvamorada.png"
+                githubLink="https://github.com/Adrianzzziny/Uva-Morada-React-Native"
                 liveLink="https://example.com"
-                tags={["Next.js", "TypeScript", "Tailwind CSS"]}
+                tags={["React Native", "TypeScript", "CSS"]}
                 company="Personal"
               />
             </div>
           </div>
         </section>
+
+        <section id="tech-stack" className="py-12 md:py-24 lg:py-32">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-12 text-center">
+              Tech Stack
+            </h2>
+            <TechStack />
+          </div>
+        </section>
+
 
         <section id="education" className="py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
@@ -189,13 +212,22 @@ export default function Page() {
                   Siempre estoy interesado en nuevas oportunidades, colaboraciones y proyectos desafiantes. No dudes en
                   contactarme si quieres trabajar juntos.
                 </p>
-                <Link href="mailto:adri-escobar@hotmail.com">
+                <Link href="mailto:adri-escobar@hotmail.com" target="_blank" rel="noopener noreferrer" className="mr-2 w-auto ">
                   <Button
                     size="lg"
-                    className="bg-white text-black border-2 border-black hover:bg-black hover:text-white dark:bg-white dark:text-black dark:border-white dark:hover:bg-black dark:hover:text-white transition-colors"
+                    className="mt-8 bg-white text-black border-2 border-black hover:bg-black hover:text-white dark:bg-white dark:text-black dark:border-white dark:hover:bg-black dark:hover:text-white transition-colors"
                   >
-                    <Mail className="mr-2 h-5 w-5" />
+                    <Mail className="mr-2 h-7 w-7" />
                     adri-escobar@hotmail.com
+                  </Button>
+                </Link>
+                <Link href="https://wa.me/51907084383" target="_blank" rel="noopener noreferrer" className="ml-2 w-auto">
+                  <Button
+                    size="lg"
+                    className="mt-8 bg-white text-black border-2 border-black hover:bg-black hover:text-white dark:bg-white dark:text-black dark:border-white dark:hover:bg-black dark:hover:text-white transition-colors"
+                  >
+                    <MessageCircleMore className="ml-2 mr-2 h-7 w-7" />
+                    +51 907084383
                   </Button>
                 </Link>
               </div>
@@ -209,14 +241,6 @@ export default function Page() {
           <p className="text-xs text-gray-500 dark:text-gray-400">
             © 2025 Adrian Escobar. Todos los derechos reservados.
           </p>
-          <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-            <Link className="text-xs hover:underline underline-offset-4" href="#">
-              Términos de Servicio
-            </Link>
-            <Link className="text-xs hover:underline underline-offset-4" href="#">
-              Privacidad
-            </Link>
-          </nav>
         </div>
       </footer>
     </div>

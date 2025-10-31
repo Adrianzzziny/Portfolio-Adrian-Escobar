@@ -8,9 +8,11 @@ import type React from "react" // Import React
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "John.dev - Full Stack Developer",
-  description: "Full stack developer portfolio showcasing projects and skills",
-    generator: 'v0.app'
+  title: "Adrian.dev - Full Stack Developer",
+  description: "Frontend developer portfolio showcasing projects and skills",
+  icons: {
+    icon: "/code-xml.png",
+  },
 }
 
 export default function RootLayout({
@@ -19,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="es" className="scroll-smooth" suppressHydrationWarning>
       <body className={cn("min-h-screen bg-background font-sans antialiased", inter.className)}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
           {children}
