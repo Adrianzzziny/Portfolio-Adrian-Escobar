@@ -1,6 +1,6 @@
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Github, ExternalLink } from "lucide-react"
+import { Github, ExternalLink, Hourglass } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 
@@ -10,8 +10,10 @@ interface ProjectCardProps {
   image: string
   githubLink?: string
   liveLink?: string
+  inProcess?: boolean
   tags: string[]
   company: string
+  
 }
 
 export default function ProjectCard({
@@ -20,6 +22,7 @@ export default function ProjectCard({
   image,
   githubLink,
   liveLink,
+  inProcess,
   tags,
   company,
 }: ProjectCardProps) {
@@ -77,6 +80,12 @@ export default function ProjectCard({
             <ExternalLink className="h-4 w-4" />
             Ver Producto
           </Link>
+        )}
+        {inProcess && (
+          <div className="inline-flex items-center gap-2 text-sm  w-full cursor-default text-muted-foreground">
+            <Hourglass className="h-4 w-4" />
+            En proceso...
+          </div>
         )}
       </CardFooter>
     </Card>

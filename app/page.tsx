@@ -113,7 +113,7 @@ export default function Page() {
                 image="/indecopi.png"
                 githubLink="https://github.com/Adrianzzziny/MVP-Indecopi-Angular"
                 liveLink="https://mvp-indecopi-angular-oair.vercel.app/home"
-                tags={["Angular", "TypeScript", "Figma"]}
+                tags={["Angular", "TypeScript", "CSS", "Figma"]}
                 company="Cloud Computing Peru"
               />
               <ProjectCard
@@ -121,8 +121,8 @@ export default function Page() {
                 description="Módulo completo de gestión de usuarios con login, bandeja de usuarios, creación, reportes y edición con validaciones dinámicas para entidad pública."
                 image="/Sunass.png"
                 githubLink="https://github.com/Adrianzzziny/Dashboard-Sunass-IEVAP-Angular"
-                liveLink="https://github.com/Adrianzzziny/Dashboard-Sunass-IEVAP-Angular"
-                tags={["Angular", "TypeScript", "Supabase"]}
+                inProcess={true}
+                tags={["Angular", "TypeScript", "CSS", "Figma", "Postman", "MySQL"]}
                 company="Cloud Computing Peru"
               />
               <ProjectCard
@@ -131,7 +131,7 @@ export default function Page() {
                 image="/screenEstacionRoll.png"
                 githubLink="https://github.com/Adrianzzziny/Estacion-Roll-FoodOrderApp"
                 liveLink="https://estacion-roll-food-order-app.vercel.app/"
-                tags={["React", "Next.js", "Tailwind CSS", "V0"]}
+                tags={["React", "Next.js", "Tailwind CSS", "V0", "Stitch AI"]}
                 company="Cloud Computing Peru"
               />
 
@@ -158,7 +158,6 @@ export default function Page() {
                 description="Sistema que genera automáticamente horarios semanales de salones a partir de archivos Excel, simplificando la creación de horarios impresos para aulas."
                 image="/screenSistemaHorarios.png"
                 githubLink="https://github.com/Adrianzzziny/Sistema-de-Horarios-"
-                liveLink="https://github.com/Adrianzzziny/Sistema-de-Horarios-"
                 tags={["HTML", "CSS", "Javascript", "Excel Integration"]}
                 company="Cibertec Peru SAC"
               />
@@ -167,8 +166,7 @@ export default function Page() {
                 title="Refactorización de Componentes Web"
                 description="Optimización y refactorización de componentes React con TypeScript. Mejora en mantenibilidad, performance e integración con APIs REST para la firma de abogados Rubio Leguia."
                 image="/screenKruma2.png"
-                githubLink="https://github.com"
-                liveLink="https://example.com"
+                githubLink="https://github.com/Adrianzzziny/Kruma-Rubio-Frontend"
                 tags={["React", "TypeScript", "API REST", "Figma"]}
                 company="Kruma"
               />
@@ -178,7 +176,7 @@ export default function Page() {
                 description="Aplicacion móvil desarrollada con React Native y TypeScript. Diseño moderno con animaciones, formularios para Inicio Sesion, Registro, Elección de objetivo nutricional"
                 image="/screenUvamorada.png"
                 githubLink="https://github.com/Adrianzzziny/Uva-Morada-React-Native"
-                liveLink="https://example.com"
+                inProcess={true}
                 tags={["React Native", "TypeScript", "CSS"]}
                 company="Personal"
               />
