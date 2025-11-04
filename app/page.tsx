@@ -139,8 +139,7 @@ export default function Page() {
                 title="Sistema de Gestión Académica"
                 description="Aplicación web para automatizar procesos académicos, reduciendo tiempos en un 70%. Interfaz moderna y responsive con enfoque en accesibilidad."
                 image="/screenAcademica.png"
-                githubLink="https://github.com"
-                liveLink="https://example.com"
+                inProcess={true}
                 tags={["Vue JS", "TypeScript", "CSS" ,"Firebase"]}
                 company="Cibertec Peru SAC"
               />
